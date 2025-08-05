@@ -1,4 +1,4 @@
-## makeCacheMatrix: creates a special matrix object that can store its inverse
+## makeCacheMatrix: creates matrix object that can store its inverse
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL  # initialize inverse cache
   set <- function(y) {
@@ -43,3 +43,4 @@ print(inv2)
 cachedMatrix$set(matrix(c(1, 2, 3, 4), nrow = 2))
 inv3 <- cacheSolve(cachedMatrix)
 print(inv3)
+
